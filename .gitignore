@@ -5,9 +5,9 @@
 # /public/upload
 /public/upload/*
 
-[log] - client.txt
-[log] - generate.txt
-[log] - server.txt
+"[log] - client.txt"
+"[log] - generate.txt"
+"[log] - server.txt"
 data.csv
 data.zip
 500KB.txt
