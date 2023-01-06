@@ -25,7 +25,6 @@ def create_server():
 
 
 def add_to_queue(delaytime, common_queue):
-    print("----------------Generate beat------------")
     while True:
         time.sleep(0.05)
         print("done sleeping", flush=True)
@@ -33,7 +32,6 @@ def add_to_queue(delaytime, common_queue):
 
 
 async def send_data(common_queue, path):
-    print("-----------send data------------")
     try:
         async with websockets.connect('ws://127.0.0.1:4000') as websocket:
             f = open(path, "r")
@@ -56,8 +54,6 @@ def read_from_queue(delaytime, common_queue, path):
 
 
 if __name__ == "__main__":
-    print("---------------------------WEBSOCKET POC---------------------------")
-
     manager = multiprocessing.Manager()
     common_queue = manager.Queue()
 
