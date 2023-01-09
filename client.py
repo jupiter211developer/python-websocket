@@ -37,3 +37,6 @@ def generate_clients(delaytime, num=100) -> None:
     loop.run_until_complete(run_clients(num))
 
     sys.stdout = old_out
+
+if __name__ == "__main__":
+    generate_clients(1, 10)
